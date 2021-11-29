@@ -29,10 +29,6 @@ int bst_insert(bst_t *bst, int data) {
         return -1;
     if (!bst->root) {
         bst->root = (bst_node_t *)malloc(sizeof(bst_node_t));
-        
-        if (!bst->root)
-            return -1;
-        
         bst->root->data = data;
         return 0;
     }
